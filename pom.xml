@@ -4,16 +4,14 @@
   <artifactId>CardsAPI</artifactId>
   <version>1.0.0</version>
   <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
-    </plugins>
+  	<finalName>CardsAPI</finalName>
+  	<sourceDirectory>src/main/java</sourceDirectory>
+  	<resources>
+  		<resource>
+  			<targetPath>.</targetPath>
+  			<filtering>true</filtering>
+  			<directory>${basedir}/src/main/resources/</directory>
+  		</resource>
+  	</resources>
   </build>
 </project>
